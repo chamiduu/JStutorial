@@ -95,4 +95,13 @@ console.log(fruits[0]);
 
 fruits[0] = 'pear';
 
+console.log(fruits);
+
+for (let  i = 0 ; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+console.log('to string', fruits.toString());
+console.log(fruits.join(' * ')) ;
+console.log(fruits, fruits.pop(), fruits);
 
