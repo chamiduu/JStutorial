@@ -91,17 +91,51 @@ console.log(fruit.split(''));
 let fruits = ['banana', 'apple', 'orange', 'pineapples'];  
 fruits = new Array('banana', 'apple', 'orange', 'pineapples');
 
-console.log(fruits[0]);
+// console.log(fruits[0]);
 
 fruits[0] = 'pear';
 
-console.log(fruits);
+// console.log(fruits);
 
 for (let  i = 0 ; i < fruits.length; i++) {
-    console.log(fruits[i]);
+    // console.log(fruits[i]);
 }
 
-console.log('to string', fruits.toString());
-console.log(fruits.join(' * ')) ;
-console.log(fruits, fruits.pop(), fruits);
+// console.log('to string', fruits.toString());
+// console.log(fruits.join(' * ')) ;
+// console.log(fruits, fruits.pop(), fruits);
+// console.log(fruits.push('blackberries'), fruits);
+fruits[4] = 'new fruit';
+// console.log(fruits);
 
+vegetables = ['asparagus', 'tomato', 'brocolli' ];
+let all_grocceries = fruits.concat(vegetables);
+// console.log(all_grocceries);
+
+let someNumbers = [5, 10, 2, 25, 3, 255, 1, 2, 5, 334, 321, 2];
+// console.log(someNumbers.sort(function(a,b) {return a-b}));
+
+let emptyArray = new Array();
+
+for (let num = 0; num < 10; num++) {
+    emptyArray.push(num);
+}
+// console.log(emptyArray);
+
+for (let myNumber = 0; myNumber <= 20; myNumber++) {
+    // console.log('Chamindu ', myNumber)
+}
+
+let student = { 
+    first: 'Chamindu', 
+    last: 'Jayanath', 
+    age: 25, 
+    height:165
+};
+
+console.log(student.first);
+console.log(student['last']);
+student.first = 'notChamindu';
+console.log(student.first);
+student.age++;
+console.log(student.age);
