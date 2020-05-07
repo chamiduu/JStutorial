@@ -130,20 +130,18 @@ let student = {
     first: 'Chamindu', 
     last: 'Jayanath', 
     age: 25, 
-    height:165
+    height:165,
+    studentInfo: function () {
+        return this.first + '\n' + this.last + '\n' + this.age;
+    }
 };
 
 console.log(student.first);
 console.log(student['last']);
 student.first = 'notChamindu';
 console.log(student.first);
+student.first = 'Chamindu';
 student.age++;
 console.log(student.age);
-window.onSpotifyWebPlaybackSDKReady = () => {
-    const userAccessToken = "[access token]";
-    const webPlayback = new Spotify.Player({
-      name: "Spotify Web Playback SDK",
-      getOAuthToken: callback => { callback(token)}
-    });
-    webPlayback.connect();
-  };
+console.log(student.studentInfo());
+
