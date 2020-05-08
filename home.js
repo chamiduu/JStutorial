@@ -145,3 +145,39 @@ student.age++;
 console.log(student.age);
 console.log(student.studentInfo());
 
+// let age = prompt('What is ur age?');
+
+/*
+if ((age >= 03) && (age <= 12)) {
+    status = 'target demo';
+    console.log(status);
+} else {
+    status = 'not my audience';
+    console.log(status);
+}
+*/
+
+// switch statements
+
+// day 0 --> Sunday
+// day 6 --> Saturday
+// day 4 --> Thursday --> weekday
+
+switch (1) {
+    case 0:
+        text = 'weekend';
+        break;
+    case 5:
+        text = 'weekend';
+        break;
+    case 6:
+        text = 'Saturday';
+        break;
+    default:
+        text = 'Weekday';
+        break;
+}
+ 
+console.log(text)
+
+
